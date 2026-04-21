@@ -1,5 +1,7 @@
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        if not head:
+            return None
         #step 1, traverse the linked list and clone all the nodes
         cloned_nodes = {}
         current = head
